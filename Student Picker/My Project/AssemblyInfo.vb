@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("Un sélecteur d'élève au hasard fait par Ethan Duault | Icones par Icons8.com")>
 <Assembly: AssemblyCompany("Ethan DUAULT")>
 <Assembly: AssemblyProduct("Student Picker")>
-<Assembly: AssemblyCopyright("Copyright ©  2021")>
+<Assembly: AssemblyCopyright("Copyright ©  2022")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>

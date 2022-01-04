@@ -1,0 +1,17 @@
+D:\Documents\GitHub\StudentPicker\Student Picker\bin\Release\Student Picker.exe.config
+D:\Documents\GitHub\StudentPicker\Student Picker\bin\Release\Student Picker.exe.manifest
+D:\Documents\GitHub\StudentPicker\Student Picker\bin\Release\Student Picker.application
+D:\Documents\GitHub\StudentPicker\Student Picker\bin\Release\Student Picker.exe
+D:\Documents\GitHub\StudentPicker\Student Picker\bin\Release\Student Picker.pdb
+D:\Documents\GitHub\StudentPicker\Student Picker\bin\Release\Student Picker.xml
+D:\Documents\GitHub\StudentPicker\Student Picker\obj\Release\Student Picker.vbproj.AssemblyReference.cache
+D:\Documents\GitHub\StudentPicker\Student Picker\obj\Release\Student Picker.vbproj.SuggestedBindingRedirects.cache
+D:\Documents\GitHub\StudentPicker\Student Picker\obj\Release\Student_Picker.Main.resources
+D:\Documents\GitHub\StudentPicker\Student Picker\obj\Release\Student_Picker.Resources.resources
+D:\Documents\GitHub\StudentPicker\Student Picker\obj\Release\Student Picker.vbproj.GenerateResource.cache
+D:\Documents\GitHub\StudentPicker\Student Picker\obj\Release\Student Picker.vbproj.CoreCompileInputs.cache
+D:\Documents\GitHub\StudentPicker\Student Picker\obj\Release\Student Picker.exe.manifest
+D:\Documents\GitHub\StudentPicker\Student Picker\obj\Release\Student Picker.application
+D:\Documents\GitHub\StudentPicker\Student Picker\obj\Release\Student Picker.exe
+D:\Documents\GitHub\StudentPicker\Student Picker\obj\Release\Student Picker.xml
+D:\Documents\GitHub\StudentPicker\Student Picker\obj\Release\Student Picker.pdb

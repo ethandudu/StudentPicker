@@ -11,3 +11,7 @@ D:\Documents\GitHub\StudentPicker\Student Picker\obj\Debug\Student Picker.exe
 D:\Documents\GitHub\StudentPicker\Student Picker\obj\Debug\Student Picker.xml
 D:\Documents\GitHub\StudentPicker\Student Picker\obj\Debug\Student Picker.pdb
 D:\Documents\GitHub\StudentPicker\Student Picker\obj\Debug\Student_Picker.Main.resources
+D:\Documents\GitHub\StudentPicker\Student Picker\bin\Debug\Student Picker.exe.manifest
+D:\Documents\GitHub\StudentPicker\Student Picker\bin\Debug\Student Picker.application
+D:\Documents\GitHub\StudentPicker\Student Picker\obj\Debug\Student Picker.exe.manifest
+D:\Documents\GitHub\StudentPicker\Student Picker\obj\Debug\Student Picker.application
