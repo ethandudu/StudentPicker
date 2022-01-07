@@ -26,14 +26,16 @@ Partial Class Main
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.Wheel_PB = New System.Windows.Forms.PictureBox()
         Me.Spin_BT = New System.Windows.Forms.Button()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Wheel_Timer = New System.Windows.Forms.Timer(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Copyright_LB = New System.Windows.Forms.Label()
         Me.File_BT = New System.Windows.Forms.Button()
         Me.File_Dialog = New System.Windows.Forms.OpenFileDialog()
         Me.Student_MLB = New System.Windows.Forms.Label()
-        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.Random_Timer = New System.Windows.Forms.Timer(Me.components)
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Help_BT = New System.Windows.Forms.Button()
+        Me.Version_LB = New System.Windows.Forms.Label()
         CType(Me.Wheel_PB, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -58,9 +60,9 @@ Partial Class Main
         Me.Spin_BT.Text = "Tirer"
         Me.Spin_BT.UseVisualStyleBackColor = True
         '
-        'Timer1
+        'Wheel_Timer
         '
-        Me.Timer1.Interval = 3000
+        Me.Wheel_Timer.Interval = 3000
         '
         'Label1
         '
@@ -87,7 +89,7 @@ Partial Class Main
         '
         Me.File_BT.Cursor = System.Windows.Forms.Cursors.Hand
         Me.File_BT.Font = New System.Drawing.Font("Berlin Sans FB", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.File_BT.Location = New System.Drawing.Point(649, 176)
+        Me.File_BT.Location = New System.Drawing.Point(649, 203)
         Me.File_BT.Name = "File_BT"
         Me.File_BT.Size = New System.Drawing.Size(139, 29)
         Me.File_BT.TabIndex = 2
@@ -105,12 +107,11 @@ Partial Class Main
         Me.Student_MLB.Font = New System.Drawing.Font("Berlin Sans FB", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Student_MLB.Location = New System.Drawing.Point(366, 441)
         Me.Student_MLB.Name = "Student_MLB"
-        Me.Student_MLB.Size = New System.Drawing.Size(67, 23)
+        Me.Student_MLB.Size = New System.Drawing.Size(0, 23)
         Me.Student_MLB.TabIndex = 3
-        Me.Student_MLB.Text = "ELEVE"
         Me.Student_MLB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Timer2
+        'Random_Timer
         '
         '
         'Label2
@@ -124,6 +125,28 @@ Partial Class Main
         Me.Label2.Text = "L'élève choisi est :"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Help_BT
+        '
+        Me.Help_BT.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Help_BT.Font = New System.Drawing.Font("Berlin Sans FB", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Help_BT.Location = New System.Drawing.Point(649, 306)
+        Me.Help_BT.Name = "Help_BT"
+        Me.Help_BT.Size = New System.Drawing.Size(139, 29)
+        Me.Help_BT.TabIndex = 2
+        Me.Help_BT.Text = "Aide"
+        Me.Help_BT.UseVisualStyleBackColor = True
+        '
+        'Version_LB
+        '
+        Me.Version_LB.AutoSize = True
+        Me.Version_LB.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Version_LB.Font = New System.Drawing.Font("Berlin Sans FB", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Version_LB.Location = New System.Drawing.Point(699, 515)
+        Me.Version_LB.Name = "Version_LB"
+        Me.Version_LB.Size = New System.Drawing.Size(89, 15)
+        Me.Version_LB.TabIndex = 2
+        Me.Version_LB.Text = "Version X.X.X.X"
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -132,8 +155,10 @@ Partial Class Main
         Me.ClientSize = New System.Drawing.Size(800, 539)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Student_MLB)
+        Me.Controls.Add(Me.Version_LB)
         Me.Controls.Add(Me.Copyright_LB)
         Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Help_BT)
         Me.Controls.Add(Me.File_BT)
         Me.Controls.Add(Me.Spin_BT)
         Me.Controls.Add(Me.Wheel_PB)
@@ -151,12 +176,14 @@ Partial Class Main
 
     Friend WithEvents Wheel_PB As PictureBox
     Friend WithEvents Spin_BT As Button
-    Friend WithEvents Timer1 As Timer
+    Friend WithEvents Wheel_Timer As Timer
     Friend WithEvents Label1 As Label
     Friend WithEvents Copyright_LB As Label
     Friend WithEvents File_BT As Button
     Friend WithEvents File_Dialog As OpenFileDialog
     Friend WithEvents Student_MLB As Label
-    Friend WithEvents Timer2 As Timer
+    Friend WithEvents Random_Timer As Timer
     Friend WithEvents Label2 As Label
+    Friend WithEvents Help_BT As Button
+    Friend WithEvents Version_LB As Label
 End Class

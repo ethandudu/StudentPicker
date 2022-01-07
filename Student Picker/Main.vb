@@ -3,10 +3,11 @@
     Public student_list As New List(Of String) 'List of students from file provided
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Wheel_PB.Image = My.Resources.wheel_static
-        Timer1.Interval = 3000
-        Timer2.Interval = 300
+        Wheel_Timer.Interval = 3000
+        Random_Timer.Interval = 300
         Student_MLB.Visible = False
         Label2.Visible = False
+        Version_LB.Text = String.Format("Version {0}", My.Application.Info.Version.ToString)
 
     End Sub
 
@@ -16,10 +17,10 @@
 
             My.Computer.Audio.Play(My.Resources.Spin_Sound, AudioPlayMode.Background) 'Audio FX
             Wheel_PB.Image = My.Resources.wheel_anim 'Start wheel animation
-            Timer1.Enabled = True 'Enabling and starting the timer for enabling again the buttons
-            Timer1.Start()
-            Timer2.Enabled = True
-            Timer2.Start()
+            Wheel_Timer.Enabled = True 'Enabling and starting the timer for enabling again the buttons
+            Wheel_Timer.Start()
+            Random_Timer.Enabled = True
+            Random_Timer.Start()
             Spin_BT.Enabled = False 'Disabling buttons
             File_BT.Enabled = False
             Student_MLB.Visible = True 'Enabling the student's name label
@@ -63,11 +64,11 @@
 
     End Sub
 
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        Timer1.Enabled = False
-        Timer1.Stop()
-        Timer2.Enabled = False
-        Timer2.Stop()
+    Private Sub Wheel_Timer_Tick(sender As Object, e As EventArgs) Handles Wheel_Timer.Tick
+        Wheel_Timer.Enabled = False
+        Wheel_Timer.Stop()
+        Random_Timer.Enabled = False
+        Random_Timer.Stop()
         Wheel_PB.Image = My.Resources.wheel_static
         Spin_BT.Enabled = True
         File_BT.Enabled = True
@@ -87,9 +88,17 @@
         My.Settings.Save()
     End Sub
 
-    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
+    Private Sub Random_Timer_Tick(sender As Object, e As EventArgs) Handles Random_Timer.Tick
         Dim rn As New Random
         Rstudent = student_list(rn.Next(0, student_list.Count - 1))
         Student_MLB.Text = Rstudent
+    End Sub
+
+    Private Sub Version_LB_Click(sender As Object, e As EventArgs) Handles Version_LB.Click
+        Process.Start("https://github.com/ethandudu/StudentPicker/releases")
+    End Sub
+
+    Private Sub Help_BT_Click(sender As Object, e As EventArgs) Handles Help_BT.Click
+        Process.Start("https://github.com/ethandudu/StudentPicker/blob/main/help.md")
     End Sub
 End Class

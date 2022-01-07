@@ -28,8 +28,8 @@
     <ProductName>Student Picker</ProductName>
     <PublisherName>Ethan DUAULT</PublisherName>
     <WebPage>publish.html</WebPage>
-    <ApplicationRevision>2</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -74,7 +74,7 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>9ED6B2757DEC0A8E223591AE58F8B95F52D0616C</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>54AC61D05B6FD1FDB9E30B97B8C15F0D7E40FCC1</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
@@ -83,7 +83,8 @@
     <AssemblyOriginatorKeyFile>studentpicker.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>studentpicker.pfx</ManifestKeyFile>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
