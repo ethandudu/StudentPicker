@@ -4,7 +4,8 @@ Tirage au sort des élèves en fonction d'un fichier donné.
 Version actuelle : 1.1.0.0
 
 ## Interface :
-![image](https://user-images.githubusercontent.com/41381482/147779964-2234b4cf-65f1-4b61-91fd-afe42f313c3e.png)
+![Capture d’écran 2022-01-10 143550](https://user-images.githubusercontent.com/41381482/148774980-876150e0-76e8-459b-98fa-6cadc4a070b3.png)
+
 
 ## Demo :
 ![demo](https://user-images.githubusercontent.com/41381482/147780119-0274342a-02ac-4f54-a8a2-966e4c743bde.gif)
